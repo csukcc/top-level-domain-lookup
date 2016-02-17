@@ -1,0 +1,23 @@
+#app {
+  font-family: 'Roboto', sans-serif;
+}
+
+#app h1, h2, h3, h4, h5, h6, p {
+  -webkit-font-smoothing: antialiased;
+}
+
+#app .no-mg-bot {
+  margin-bottom: 0px;
+}
+
+#app .info-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor:pointer;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
