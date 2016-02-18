@@ -4,7 +4,7 @@
   "description": "This is very basic starting point of the Vue.js single page application will filtering functionality that could filter the domain names as you type in the search box.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified\""
   },
   "repository": {
     "type": "git",
