@@ -14,10 +14,14 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  cursor:pointer;
+  cursor: pointer;
+}
+
+#app .large-input {
+  font-size: 1.5em;
 }
 
 hr {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

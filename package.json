@@ -1,0 +1,24 @@
+{
+  "name": "top-level-domain-lookup",
+  "version": "0.1.0",
+  "description": "This is very basic starting point of the Vue.js single page application will filtering functionality that could filter the domain names as you type in the search box.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csukcc/top-level-domain-lookup.git"
+  },
+  "keywords": [
+    "domain",
+    "lookup",
+    "tdl"
+  ],
+  "author": "Hao Dong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csukcc/top-level-domain-lookup/issues"
+  },
+  "homepage": "https://github.com/csukcc/top-level-domain-lookup#readme"
+}

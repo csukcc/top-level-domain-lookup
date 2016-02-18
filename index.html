@@ -14,12 +14,12 @@
 
     <div class="container">
       <div class="row no-mg-bot center">
-        <h1 class="red-text text-darken-1"><small>Lookup: top level domain</small></h1>
+        <h1 class="red-text text-darken-1"><small>Top level domain lookup</small></h1>
       </div>
       <!-- <hr /> -->
       <div class="row">
         <div class="small-12 columns">
-          <input type="search" placeholder="Type to search..." v-model="searchText">
+          <input class="large-input" type="search" placeholder="Type to search..." v-model="searchText">
         </div>
       </div>
       <div class="row">
@@ -28,23 +28,25 @@
             <table class="highlight">
               <thead>
                 <tr>
-                  <th class="red-text text-darken-4">Category</th>
-                  <th class="red-text text-darken-4">Domain</th>
-                  <th class="red-text text-darken-4">Description</th>
+                  <th class="red-text text-darken-4"><strong class="flow-text">Category</strong></th>
+                  <th class="red-text text-darken-4"><strong class="flow-text">Domain</strong></th>
+                  <th class="red-text text-darken-4"><strong class="flow-text">Description</strong></th>
                 </tr>
               </thead>
 
               <tbody>
                 <tr v-for="item in searchResults" track-by="$index">
-                  <td>{{ item.category }}</td>
-                  <td>{{ item.domain | lowercase }}</td>
-                  <td>{{ item.description }}</td>
+                  <td><span class="flow-text">{{ item.category }}</span></td>
+                  <td><span class="flow-text">{{ item.domain | lowercase }}</span></td>
+                  <td><span class="flow-text">{{ item.description }}</span></td>
                 </tr>
               </tbody>
             </table>
           </div>
           <div v-else>
-            No results found!
+            <p class="flow-text">
+              <i class="material-icons yellow-text text-accent-4">warning</i> No results found.
+            </p>
           </div>
         </div>
       </div>
@@ -56,8 +58,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
     <script type="text/javascript" src="lib/js/vue.min.js"></script>
-    <!-- <script type="text/javascript" src="lib/js/vue-resource.min.js"></script> -->
-    <script type="text/javascript" src="domains.js"></script>
+    <script type="text/javascript" src="assets/domains.js"></script>
     <script type="text/javascript" src="app.js"></script>
   </body>
 
