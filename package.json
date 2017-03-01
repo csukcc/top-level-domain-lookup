@@ -4,11 +4,15 @@
   "description": "This is very basic starting point of the Vue.js single page application will filtering functionality that could filter the domain names as you type in the search box.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"No test specified\""
+    "build": "npm-run-all build:clean build:html build:css build:js",
+    "build:clean": "rm -rf ./docs/*",
+    "build:html": "cp -r ./src/*.html ./docs/",
+    "build:css": "cp -r ./src/*.css ./docs/",
+    "build:js": "browserify ./src/app.js -o ./docs/bundle.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/csukcc/top-level-domain-lookup.git"
+    "url": "git+https://github.com/hdong92/top-level-domain-lookup.git"
   },
   "keywords": [
     "domain",
@@ -18,7 +22,7 @@
   "author": "Hao Dong",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/csukcc/top-level-domain-lookup/issues"
+    "url": "https://github.com/hdong92/top-level-domain-lookup/issues"
   },
-  "homepage": "https://github.com/csukcc/top-level-domain-lookup#readme"
+  "homepage": "https://github.com/hdong92/top-level-domain-lookup#readme"
 }

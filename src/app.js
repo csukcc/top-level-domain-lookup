@@ -1,3 +1,4 @@
+var domains = require('./assets/domains.js');
 
 var app = new Vue({
 	el: '#app',
