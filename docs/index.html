@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Top-level domain lookup">
+    <title>TLD Domain Lookup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="app.css"></link>
+
+    <body id="app">
+
+        <div class="container">
+            <div class="row no-mg-bot center">
+                <h1 class="red-text text-darken-1"><small>Top level domain lookup</small></h1>
+            </div>
+            <!-- <hr /> -->
+            <div class="row">
+                <div class="small-12 columns">
+                    <input class="large-input" type="search" placeholder="Type to search..." v-model="searchText" autofocus>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-12 columns">
+                    <div v-if="searchResults.length">
+                        <table class="highlight">
+                            <thead>
+                                <tr>
+                                    <th class="red-text text-darken-4"><strong class="flow-text">Category</strong></th>
+                                    <th class="red-text text-darken-4"><strong class="flow-text">Domain</strong></th>
+                                    <th class="red-text text-darken-4"><strong class="flow-text">Description</strong></th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr v-for="item in searchResults" track-by="$index">
+                                    <td><span class="flow-text">{{ item.category }}</span></td>
+                                    <td><span class="flow-text">{{ item.domain | lowercase }}</span></td>
+                                    <td><span class="flow-text">{{ item.description }}</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div v-else>
+                        <p class="flow-text">
+                            <i class="material-icons yellow-text text-accent-4">warning</i> No results found.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="info-icon green-text text-darken-4 tooltipped" data-position="left" data-delay="50" data-tooltip="Data source: iwantmyname.com">
+            <i class="small material-icons">info_outline</i>
+        </a>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.13/vue.min.js"></script>
+        <script type="text/javascript" src="bundle.js"></script>
+    </body>
+
+</html>
