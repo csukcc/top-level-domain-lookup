@@ -32,7 +32,7 @@ $ npm run dev
 
 ### Publish
 
-In order to publish to `https://csukcc.github.io/finance-calc/` run the following command.
+In order to publish to `*.github.io/top-level-domain-lookup/` run the following command.
 
 ```
 $ npm run build
