@@ -2,7 +2,7 @@
 
 This is basic Vue.js single page application will filtering functionality that could filter the domain names as you type in the search box.
 
-[View demo](http://haodong.io/top-level-domain-lookup/)
+[View demo](https://hdong92.github.io/top-level-domain-lookup/)
 
 # Getting started
 
