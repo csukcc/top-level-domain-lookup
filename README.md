@@ -1,8 +1,8 @@
-# Top level domain lookup [![Build Status](https://travis-ci.org/hdong92/top-level-domain-lookup.svg?branch=master)](https://travis-ci.org/hdong92/top-level-domain-lookup)
+# Top level domain lookup [![Build Status](https://travis-ci.org/h-dong/top-level-domain-lookup.svg?branch=master)](https://travis-ci.org/h-dong/top-level-domain-lookup)
 
 This is basic Vue.js single page application will filtering functionality that could filter the domain names as you type in the search box.
 
-[View demo](https://hdong92.github.io/top-level-domain-lookup/)
+[View demo](https://h-dong.github.io/top-level-domain-lookup/)
 
 # Getting started
 
